@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Showcase | [Your Name]</title>
+    <style>
+        /* --- Basic Reset and Typography --- */
+        body {
+            font-family: 'Georgia', serif; /* Classic, earthy font */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f7f4; /* Off-white, like unglazed clay */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'Arial', sans-serif; /* Clean, modern heading */
+            text-align: center;
+            color: #6b4e44; /* Earthy brown */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        /* --- Header/Navigation --- */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #6b4e44;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a87665; /* Lighter brown on hover */
+        }
+
+        /* --- Main Content Layout --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Gallery Section --- */
+        #gallery {
+            padding: 40px 0;
+        }
+
+        .pottery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .pottery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .pottery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .pottery-item img {
+            width: 100%;
+            height: 300px; /* Fixed height for consistent grid look */
+            object-fit: cover; /* Ensures images fill the space without distortion */
+            display: block;
+        }
+
+        .pottery-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .pottery-details h3 {
+            margin-top: 0;
+            color: #6b4e44;
+            font-size: 1.2em;
+        }
+
+        .pottery-details p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* --- About Section --- */
+        #about, #contact {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* --- Contact Section --- */
+        #contact {
+            background-color: #eee;
+        }
+
+        .contact-info a {
+            color: #6b4e44;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #6b4e44;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.8em;
+        }
+
+        /* --- Responsive Design (Mobile First) --- */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            nav {
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .pottery-item img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>[Your Name/Studio Name] Pottery</h1>
+            <nav>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="gallery" class="container">
+        <h2>Recent Works</h2>
+        <div class="pottery-grid">
+
+            <div class="pottery-item">
+                <img src="path/to/your/image1.jpg" alt="A hand-thrown ceramic mug with blue glaze">
+                <div class="pottery-details">
+                    <h3>Ocean Mug</h3>
+                    <p>Stoneware, Blue Glaze, 12oz capacity</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="path/to/your/image2.jpg" alt="A large, rustic serving bowl">
+                <div class="pottery-details">
+                    <h3>Rustic Serving Bowl</h3>
+                    <p>Terracotta clay, Clear matte glaze, Food safe</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="path/to/your/image3.jpg" alt="A delicate porcelain vase">
+                <div class="pottery-details">
+                    <h3>Minimalist Vase</h3>
+                    <p>Porcelain, Unglazed exterior, 8 inches tall</p>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <hr> <section id="about" class="container">
+        <h2>About the Artist</h2>
+        <p>
+            Hello! My name is **[Your Name]**, and I'm a ceramic artist based in [Your Location]. I find inspiration in the natural world, which often leads to earthy tones, organic textures, and functional forms. Each piece is hand-thrown and individually glazed in my home studio. My goal is to create objects that bring a moment of peace and beauty to everyday life.
+            <br><br>
+            *Specializing in functional dinnerware and sculptural forms.*
+        </p>
+         </section>
+
+    <hr> <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>
+                Interested in a custom order or want to learn more about my process? Feel free to reach out!
+            </p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Instagram: <a href="https://instagram.com/your_handle" target="_blank">@your_handle</a></p>
+                <p>Shop: <a href="https://yourshop.etsy.com" target="_blank">Your Etsy/Shop Link</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 [Your Name/Studio Name]. All rights reserved. | Hosted with GitHub Pages.
+    </footer>
+
+</body>
+</html>
