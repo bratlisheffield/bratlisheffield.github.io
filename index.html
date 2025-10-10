@@ -7,7 +7,7 @@
     <style>
         /* --- Basic Reset and Typography --- */
         body {
-            font-family: 'Georgia', serif; /* Classic, earthy font */
+            font-family: 'Georgia', serif; 
             margin: 0;
             padding: 0;
             background-color: #f8f7f4; /* Off-white, like unglazed clay */
@@ -16,7 +16,7 @@
         }
 
         h1, h2 {
-            font-family: 'Arial', sans-serif; /* Clean, modern heading */
+            font-family: 'Arial', sans-serif; 
             text-align: center;
             color: #6b4e44; /* Earthy brown */
         }
@@ -42,7 +42,7 @@
         }
 
         nav a:hover {
-            color: #a87665; /* Lighter brown on hover */
+            color: #a87665; 
         }
 
         /* --- Main Content Layout --- */
@@ -59,7 +59,8 @@
 
         .pottery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Creates columns of 300px minimum width */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
             gap: 30px;
             margin-top: 30px;
         }
@@ -81,7 +82,7 @@
         .pottery-item img {
             width: 100%;
             height: 300px; /* Fixed height for consistent grid look */
-            object-fit: cover; /* Ensures images fill the space without distortion */
+            object-fit: cover; 
             display: block;
         }
 
@@ -89,18 +90,19 @@
             padding: 15px;
             text-align: center;
         }
-
-        .pottery-details h3 {
-            margin-top: 0;
+        
+        /* Styled for a single, prominent caption */
+        .pottery-details h3 { 
+            margin: 0;
             color: #6b4e44;
             font-size: 1.2em;
+            font-weight: normal;
+        }
+        
+        .pottery-details p {
+            display: none; /* Hide the second line of text to ensure only one caption is visible */
         }
 
-        .pottery-details p {
-            margin: 5px 0 0;
-            font-size: 0.9em;
-            color: #777;
-        }
 
         /* --- About Section --- */
         #about, #contact {
@@ -165,101 +167,106 @@
     </header>
 
     <section id="gallery" class="container">
-        <h2>Recent Works</h2>
+        <h2>Hand-Formed & Fired</h2>
         <div class="pottery-grid">
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0004.jpg" alt="A set of two round green glazed pottery vases">
-    <div class="pottery-details">
-        <h3>Moss & Stone Vases</h3>
-        <p>Textured Stoneware, Forest Glaze, Quiet Forms</p>
-    </div>
-</div>
 
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0003.jpg" alt="Two speckled pottery mugs with white drip glaze">
-    <div class="pottery-details">
-        <h3>Glacier Drip Mugs</h3>
-        <p>Speckled Earth Clay, Cream-Flow Finish, Hand-formed</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0005.jpg" alt="Four pottery mugs upside down, showing their bases">
-    <div class="pottery-details">
-        <h3>The Unpolished Base Set</h3>
-        <p>Exposed Clay Foot, Subtle Texture, Functional Art</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0006.jpg" alt="Two blue pottery bowls stacked upside down">
-    <div class="pottery-details">
-        <h3>Stacked Ocean Bowls</h3>
-        <p>Deep Cobalt Wash, Wheel-thrown, Perfect Nesting</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0007.jpg" alt="Two round blue pottery bowls, one larger, one smaller">
-    <div class="pottery-details">
-        <h3>Shoreline Serving Pair</h3>
-        <p>Rustic Blue Glaze, Expansive Rim, Organic Shape</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0008.jpg" alt="Two speckled pottery mugs with white drip glaze, stacked">
-    <div class="pottery-details">
-        <h3>Cloud & Earth Mugs</h3>
-        <p>Comfort Handle, Speckled Clay Body, Flowing Glaze</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0009.jpg" alt="A hand holding a blue speckled cup among other pottery on a table">
-    <div class="pottery-details">
-        <h3>The Maker's Table</h3>
-        <p>A Curated Collection, Unique Glaze Recipes</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0001.jpg" alt="A small, bottle-necked pottery vase with a speckled base">
-    <div class="pottery-details">
-        <h3>Whisper Bud Vase</h3>
-        <p>Bottle-Necked Form, Unfinished Base, Single Stem</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0010.jpg" alt="Four speckled pottery mugs with pink-tinged white drip glaze, stacked vertically">
-    <div class="pottery-details">
-        <h3>Sunrise Mug Tower</h3>
-        <p>Soft Pink Flow, Durable Stoneware, Daily Ritual</p>
-    </div>
-</div>
-
-<div class="pottery-item">
-    <img src="IMG-20251010-WA0011.jpg" alt="Two blue speckled pottery mugs stacked together">
-    <div class="pottery-details">
-        <h3>Sea Spray Mug Pair</h3>
-        <p>Rich Blue Glaze, Hand-Applied Splatter Texture</p>
-    </div>
-</div>
-    
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0004.jpg" alt="A set of two round green glazed pottery vases">
+                <div class="pottery-details">
+                    <h3>Moss & Stone Vases</h3>
+                    <p>Hidden</p> 
+                </div>
             </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0003.jpg" alt="Two speckled pottery mugs with white drip glaze">
+                <div class="pottery-details">
+                    <h3>Glacier Drip Mugs</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0005.jpg" alt="Four pottery mugs upside down, showing their bases">
+                <div class="pottery-details">
+                    <h3>The Unpolished Base</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0006.jpg" alt="Two blue pottery bowls stacked upside down">
+                <div class="pottery-details">
+                    <h3>Stacked Ocean Bowls</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0007.jpg" alt="Two round blue pottery bowls, one larger, one smaller">
+                <div class="pottery-details">
+                    <h3>Shoreline Serving Pair</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0008.jpg" alt="Two speckled pottery mugs with white drip glaze, stacked">
+                <div class="pottery-details">
+                    <h3>Cloud & Earth Mugs</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0009.jpg" alt="A hand holding a blue speckled cup among other pottery on a table">
+                <div class="pottery-details">
+                    <h3>The Maker's Table</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0001.jpg" alt="A small, bottle-necked pottery vase with a speckled base">
+                <div class="pottery-details">
+                    <h3>Whisper Bud Vase</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0010.jpg" alt="Four speckled pottery mugs with pink-tinged white drip glaze, stacked vertically">
+                <div class="pottery-details">
+                    <h3>Sunrise Mug Tower</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+            <div class="pottery-item">
+                <img src="IMG-20251010-WA0011.jpg" alt="Two blue speckled pottery mugs stacked together">
+                <div class="pottery-details">
+                    <h3>Sea Spray Mug Pair</h3>
+                    <p>Hidden</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <hr> <section id="about" class="container">
+    <hr> 
+
+    <section id="about" class="container">
         <h2>About the Artist</h2>
         <p>
             Hello! My name is **[Your Name]**, and I'm a ceramic artist based in [Your Location]. I find inspiration in the natural world, which often leads to earthy tones, organic textures, and functional forms. Each piece is hand-thrown and individually glazed in my home studio. My goal is to create objects that bring a moment of peace and beauty to everyday life.
             <br><br>
             *Specializing in functional dinnerware and sculptural forms.*
         </p>
-         </section>
+        </section>
 
-    <hr> <section id="contact">
+    <hr> 
+
+    <section id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>
